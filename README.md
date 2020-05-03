@@ -10,7 +10,7 @@
 <h2> Демо ролик</h2>
 <video>http://youtu.be/36PWArC3ZGU</video>
 <br>
-<image src="https://github.com/NBAH79/GTKSQUARE/blob/master/duck.png" style="width=50%;height=50%"/>
+<image src="https://github.com/NBAH79/GTKSQUARE/blob/master/duck.png" style="width:50%;height:50%"/>
 <br>
 <br>
 Проект Visual Studio 2019 x86<br>
