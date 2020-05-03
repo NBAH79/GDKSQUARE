@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTKDUCK", "GTKDUCK\GTKDUCK.csproj", "{067E736E-1EF1-4346-B907-3C1644DCD910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{067E736E-1EF1-4346-B907-3C1644DCD910}.Debug|x86.ActiveCfg = Release|x86
+		{067E736E-1EF1-4346-B907-3C1644DCD910}.Debug|x86.Build.0 = Release|x86
+		{067E736E-1EF1-4346-B907-3C1644DCD910}.Release|x86.ActiveCfg = Release|x86
+		{067E736E-1EF1-4346-B907-3C1644DCD910}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC187365-5796-439E-BF48-ACA5CCFFFDDB}
+	EndGlobalSection
+EndGlobal

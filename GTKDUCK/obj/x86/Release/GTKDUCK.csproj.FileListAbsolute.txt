@@ -1,0 +1,16 @@
+I:\_GTKDUCK\GTKDUCK\bin\Release\GTKDUCK.exe.config
+I:\_GTKDUCK\GTKDUCK\bin\Release\GTKDUCK.exe
+I:\_GTKDUCK\GTKDUCK\bin\Release\atk-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\gdk-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\glade-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\glib-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\gtk-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\Mono.Posix.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\pango-sharp.dll
+I:\_GTKDUCK\GTKDUCK\bin\Release\gdk-sharp.pdb
+I:\_GTKDUCK\GTKDUCK\bin\Release\glib-sharp.pdb
+I:\_GTKDUCK\GTKDUCK\bin\Release\glade-sharp.pdb
+I:\_GTKDUCK\GTKDUCK\bin\Release\pango-sharp.pdb
+I:\_GTKDUCK\GTKDUCK\bin\Release\atk-sharp.pdb
+I:\_GTKDUCK\GTKDUCK\obj\x86\Release\GTKDUCK.csproj.CopyComplete
+I:\_GTKDUCK\GTKDUCK\obj\x86\Release\GTKDUCK.exe
