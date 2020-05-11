@@ -7,7 +7,6 @@ namespace GTKDUCK
 {
     class MainClass
     {
-        const int MAXTHREADS = 4; //bug: position++ result is int -> out of range
         const int padding = 210;
 
         public enum direction
@@ -17,15 +16,15 @@ namespace GTKDUCK
 
         public class Pseudorandom
         {
-            private byte[] random = new byte[ushort.MaxValue+ MAXTHREADS]; //economy and thread-safe
-            /*volatile*/ private ushort position = 0; //volatile doesn't work
+            private byte[] random = new byte[ushort.MaxValue+ 1]; //economy and thread-safe
+            private ushort position = 0; 
             public Pseudorandom()
             {
                 Random r = new Random();
-                for (int n = 0; n < ushort.MaxValue+ MAXTHREADS; n++) random[n] = (byte)r.Next();
+                for (int n = 0; n < ushort.MaxValue+1; n++) random[n] = (byte)r.Next();
             }
             public byte next { 
-                get => random[(ushort)position++];
+                get => random[position++];
             }
 
         }

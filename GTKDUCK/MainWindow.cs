@@ -53,18 +53,37 @@ public partial class MainWindow : Gtk.Window
         SetSizeRequest(WIDTH+50, HEIGHT + 130);
         image =new Image();
         image.SetAlignment(0f,0f);
-        image.SetSizeRequest(WIDTH+150, HEIGHT+50);
+        image.SetSizeRequest(WIDTH+20, HEIGHT+20);
         label.SetSizeRequest(WIDTH, 50);
-        image.SetPadding(75, 10);
-        scroll.SetSizeRequest(WIDTH, HEIGHT+50);
+        image.SetPadding(20, 20);
+        scroll.SetSizeRequest(WIDTH+20, HEIGHT+50);
         scroll.AddWithViewport(image);
         scroll.SetPolicy(Gtk.PolicyType.Never,Gtk.PolicyType.Never);
         vbox.PackStart(label, false, true, 0);
         vbox.PackStart(scroll,false, true, 0);
         Add(vbox);
-        Build(Title,WIDTH+200,HEIGHT+50);
+        Build2(Title,WIDTH+50,HEIGHT+20);
         KeyPressEvent += OnKeyPress;
     }
+
+    protected virtual void Build2(string Title, int width, int height)
+    {
+        global::Stetic.Gui.Initialize(this);
+        // Widget MainWindow
+        this.Name = "MainWindow";
+        this.Title = global::Mono.Unix.Catalog.GetString(Title);
+        this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+        this.BorderWidth = ((uint)(3));
+        if ((this.Child != null))
+        {
+            this.Child.ShowAll();
+        }
+        this.DefaultWidth = width;
+        this.DefaultHeight = height;
+        this.Show();
+        this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+    }
+
     public void ShowPixels()
     {
         image.Pixbuf = new Gdk.Pixbuf(page.bytes, Gdk.Colorspace.Rgb, false, 8, WIDTH, HEIGHT, WIDTH * 3);
